@@ -2,6 +2,9 @@ version:  '3.9'
 services: 
     sistema_concrete_java:
       container_name: sistema_concrete_java
+      build:
+        dockerfile: /Users/lucas.vinicius.costa/Desktop/Academy DevOps/Validador/Dockerfile
+        context: /Users/lucas.vinicius.costa/Desktop/Academy DevOps/Validador/.
       image: lucasvscosta/validador-cpf-turma-devops
       ports: 
         - "3001:8080"
